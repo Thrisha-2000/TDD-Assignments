@@ -16,7 +16,14 @@ public class LightGridWithBrightnessImpl extends LightGrid {
 
     @Override
     public void turnOffGrid(Coordinates c1, Coordinates c2) {
-
+        for (int i = c1.getRow(); i <=c2.getRow() ; i++) {
+            for (int j = c1.getCol(); j <= c2.getCol(); j++) {
+                int currentBrightness = this.getLights()[i][j].getBrightness();
+                if (currentBrightness != 0){
+                    this.getLights()[i][j].setBrightness(currentBrightness - 1);
+                }
+            }
+        }
     }
 
     @Override
