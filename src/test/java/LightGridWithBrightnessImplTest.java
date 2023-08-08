@@ -57,6 +57,6 @@ public class LightGridWithBrightnessImplTest {
         Coordinates c1 = new Coordinates(0,0);
         Coordinates c2 = new Coordinates(1,1);
         lightGrid.toggleGrid(c1,c2);
-        Assertions.assertEquals(6, lightGrid.countLitLights());
+        Assertions.assertEquals(8, lightGrid.countLitLights());
     }
 }

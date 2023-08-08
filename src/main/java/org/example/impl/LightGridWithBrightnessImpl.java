@@ -11,7 +11,12 @@ public class LightGridWithBrightnessImpl extends LightGrid {
 
     @Override
     public void toggleGrid(Coordinates c1, Coordinates c2) {
-
+        for (int i = c1.getRow(); i <=c2.getRow() ; i++) {
+            for (int j = c1.getCol(); j <= c2.getCol(); j++) {
+                int currentBrightness = this.getLights()[i][j].getBrightness();
+                this.getLights()[i][j].setBrightness(currentBrightness + 2);
+            }
+        }
     }
 
     @Override
