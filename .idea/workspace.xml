@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1607cf9-3ea1-4ee1-bc57-f305cec2a74e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/LightWithBrightnessImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LightWithBrightnessImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LightGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LightGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/impl/LightGridWithBrightnessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/impl/LightGridWithBrightnessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/impl/LightImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/impl/LightImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LightGridWithBrightnessImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LightGridWithBrightnessImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +61,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LightWithBrightnessImplTest.testLightTurnOffInitiallyWhenAlreadyOff">
-    <configuration name="LightGridImplTest.toggleThrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LightWithBrightnessImplTest">
+    <configuration name="LightWithBrightnessImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -71,7 +75,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightGridImplTest.toggleThrice&quot;" />
+            <option value="&quot;LightWithBrightnessImplTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -82,7 +86,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LightWithBrightnessImplTest.testLightInitialBrightness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LightWithBrightnessImplTest.testLightToggle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -95,7 +99,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightWithBrightnessImplTest.testLightInitialBrightness&quot;" />
+            <option value="&quot;LightWithBrightnessImplTest.testLightToggle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LightWithBrightnessImplTest" />
+        <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightToggle" />
         <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightTurnOffInitiallyWhenAlreadyOff" />
         <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightTurnOff" />
         <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightTurnOn" />
-        <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightInitialBrightness" />
-        <item itemvalue="Gradle.LightGridImplTest.toggleThrice" />
       </list>
     </recent_temporary>
   </component>

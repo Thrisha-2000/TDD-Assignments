@@ -1,11 +1,12 @@
 package org.example.impl;
 
 import org.example.Coordinates;
+import org.example.Light;
 import org.example.LightGrid;
 
 public class LightGridWithBrightnessImpl extends LightGrid {
-    public LightGridWithBrightnessImpl(int maxRows, int maxCols) {
-        super(maxRows, maxCols);
+    public LightGridWithBrightnessImpl() {
+        super(1000,1000);
     }
 
     @Override
