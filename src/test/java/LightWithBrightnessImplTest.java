@@ -32,4 +32,13 @@ public class LightWithBrightnessImplTest {
         light.turnOff();
         Assertions.assertEquals(brightnessBeforeTurnOff - 1, light.getBrightness());
     }
+
+    @Test
+    void testLightToggle() {
+        LightWithBrightnessImpl light = new LightWithBrightnessImpl();
+        int brightnessBeforeToggle = light.getBrightness();
+        light.toggle();
+        Assertions.assertEquals(brightnessBeforeToggle + 2, light.getBrightness());
+
+    }
 }
