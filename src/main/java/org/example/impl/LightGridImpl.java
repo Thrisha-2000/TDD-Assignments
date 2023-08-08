@@ -17,7 +17,11 @@ public class LightGridImpl extends LightGrid {
 
     @Override
     public void turnOffGrid(Coordinates c1, Coordinates c2) {
-
+        for (int i = c1.getRow(); i <=c2.getRow() ; i++) {
+            for (int j = c1.getCol(); j <= c2.getCol(); j++) {
+                this.getLights()[i][j].setTurnedOn(false);
+            }
+        }
     }
 
     @Override
