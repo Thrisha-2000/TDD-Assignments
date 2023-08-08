@@ -71,4 +71,45 @@ public class LightGridImplTest {
         lightGrid.turnOnGrid(c1, c2);
         Assertions.assertEquals(4, lightGrid.countLitLights());
     }
+
+    @Test
+    void testTurnOffGrid(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.turnOnGrid(c1,c2);
+        lightGrid.turnOffGrid(c1, c2);
+        Assertions.assertEquals(0, lightGrid.countLitLights());
+    }
+
+    @Test
+    void testTurnOffSameGridTwice(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.turnOnGrid(c1,c2);
+        lightGrid.turnOffGrid(c1, c2);
+        Assertions.assertEquals(0, lightGrid.countLitLights());
+        lightGrid.turnOffGrid(c1, c2);
+        Assertions.assertEquals(0, lightGrid.countLitLights());
+    }
+
+    @Test
+    void toggleGrid(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(4,lightGrid.countLitLights());
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(0,lightGrid.countLitLights());
+    }
+
+    @Test
+    void toggleThrice(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.toggleGrid(c1,c2);
+        int countOfLightsLitFirstTime = lightGrid.countLitLights();
+        lightGrid.toggleGrid(c1,c2);
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(countOfLightsLitFirstTime,lightGrid.countLitLights());
+    }
 }

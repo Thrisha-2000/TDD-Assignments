@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1607cf9-3ea1-4ee1-bc57-f305cec2a74e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LightGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LightGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/impl/LightGridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/impl/LightGridImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LightGridImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LightGridImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LightImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LightImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LightGridWithBrightnessImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LightGridWithBrightnessImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,8 +57,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LightGridImplTest">
-    <configuration name="LightGridImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LightGridWithBrightnessImplTest.testTurnOnGrid">
+    <configuration name="LightGridWithBrightnessImplTest.testInitialGridState" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -65,7 +71,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightGridImplTest&quot;" />
+            <option value="&quot;LightGridWithBrightnessImplTest.testInitialGridState&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -76,7 +82,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LightGridImplTest.testCountLitLightsSingleCol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LightGridWithBrightnessImplTest.testTurnOnGrid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -89,7 +95,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightGridImplTest.testCountLitLightsSingleCol&quot;" />
+            <option value="&quot;LightGridWithBrightnessImplTest.testTurnOnGrid&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -100,7 +106,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LightGridImplTest.testToggleGridInvalidInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LightWithBrightnessImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightGridImplTest.testToggleGridInvalidInput&quot;" />
+            <option value="&quot;LightWithBrightnessImplTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +130,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LightImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LightWithBrightnessImplTest.testLightToggle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightImplTest&quot;" />
+            <option value="&quot;LightWithBrightnessImplTest.testLightToggle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +154,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LightTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LightWithBrightnessImplTest.testLightTurnOffInitiallyWhenAlreadyOff" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LightTest&quot;" />
+            <option value="&quot;LightWithBrightnessImplTest.testLightTurnOffInitiallyWhenAlreadyOff&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -174,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LightGridImplTest" />
-        <item itemvalue="Gradle.LightImplTest" />
-        <item itemvalue="Gradle.LightGridImplTest.testCountLitLightsSingleCol" />
-        <item itemvalue="Gradle.LightGridImplTest.testToggleGridInvalidInput" />
-        <item itemvalue="Gradle.LightTest" />
+        <item itemvalue="Gradle.LightGridWithBrightnessImplTest.testTurnOnGrid" />
+        <item itemvalue="Gradle.LightGridWithBrightnessImplTest.testInitialGridState" />
+        <item itemvalue="Gradle.LightWithBrightnessImplTest" />
+        <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightToggle" />
+        <item itemvalue="Gradle.LightWithBrightnessImplTest.testLightTurnOffInitiallyWhenAlreadyOff" />
       </list>
     </recent_temporary>
   </component>
