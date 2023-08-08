@@ -18,6 +18,9 @@ public class LightWithBrightnessImpl extends Light {
     }
 
     public void turnOff() {
-
+        int currentBrightness = this.getBrightness();
+        if (currentBrightness != 0) {
+            this.setBrightness(currentBrightness - 1);
+        }
     }
 }
