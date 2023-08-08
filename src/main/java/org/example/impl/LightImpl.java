@@ -8,4 +8,8 @@ public class LightImpl extends Light {
         boolean currentState = this.isTurnedOn();
         this.setTurnedOn(!currentState);
     }
+
+    public LightImpl() {
+        super();
+    }
 }
