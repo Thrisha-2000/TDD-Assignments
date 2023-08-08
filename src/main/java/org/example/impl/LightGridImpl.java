@@ -12,7 +12,12 @@ public class LightGridImpl extends LightGrid {
 
     @Override
     public void toggleGrid(Coordinates c1, Coordinates c2) {
-
+        for (int i = c1.getRow(); i <=c2.getRow() ; i++) {
+            for (int j = c1.getCol(); j <= c2.getCol(); j++) {
+                boolean currentState = this.getLights()[i][j].isTurnedOn();
+                this.getLights()[i][j].setTurnedOn(!currentState);
+            }
+        }
     }
 
     @Override
