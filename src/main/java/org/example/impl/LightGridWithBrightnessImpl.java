@@ -21,11 +21,23 @@ public class LightGridWithBrightnessImpl extends LightGrid {
 
     @Override
     public void turnOnGrid(Coordinates c1, Coordinates c2) {
-
+        for (int i = c1.getRow(); i <=c2.getRow() ; i++) {
+            for (int j = c1.getCol(); j <= c2.getCol(); j++) {
+                int currentBrightness = this.getLights()[i][j].getBrightness();
+                this.getLights()[i][j].setBrightness(currentBrightness + 1);
+            }
+        }
     }
 
     @Override
     public int countLitLights() {
-        return 0;
+        int count = 0;
+
+        for (int i = 0; i < this.getMaxRows(); i++) {
+            for (int j = 0; j < this.getMaxCols(); j++) {
+                    count += this.getLights()[i][j].getBrightness();
+            }
+        }
+        return count;
     }
 }
