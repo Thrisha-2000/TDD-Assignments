@@ -1,14 +1,22 @@
+import org.example.Coordinates;
+import org.example.impl.LightGridImpl;
 import org.example.impl.LightGridWithBrightnessImpl;
-import org.example.impl.LightImpl;
 import org.example.impl.LightWithBrightnessImpl;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class LightGridWithBrightnessImplTest {
 
+    LightGridWithBrightnessImpl lightGrid;
+
+    @BeforeEach
+    void setup(){
+        lightGrid = new LightGridWithBrightnessImpl();
+
+    }
     @Test
     void testInitialGridState(){
-        LightGridWithBrightnessImpl lightGrid = new LightGridWithBrightnessImpl();
         LightWithBrightnessImpl currentLight;
         for (int i = 0; i < lightGrid.getMaxRows(); i++) {
             for (int j = 0; j < lightGrid.getMaxCols(); j++) {
@@ -17,5 +25,13 @@ public class LightGridWithBrightnessImplTest {
                 Assertions.assertEquals(0,currentLight.getBrightness());
             }
         }
+    }
+
+    @Test
+    void testTurnOnGrid(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.turnOnGrid(c1, c2);
+        Assertions.assertEquals(4, lightGrid.countLitLights());
     }
 }

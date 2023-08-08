@@ -6,7 +6,7 @@ import org.example.LightGrid;
 
 public class LightGridWithBrightnessImpl extends LightGrid {
     public LightGridWithBrightnessImpl() {
-        super(1000,1000);
+        super(1000,1000, true);
     }
 
     @Override
