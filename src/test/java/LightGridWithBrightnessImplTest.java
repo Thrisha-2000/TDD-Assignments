@@ -42,4 +42,21 @@ public class LightGridWithBrightnessImplTest {
         lightGrid.turnOffGrid(c1, c2);
         Assertions.assertEquals(0, lightGrid.countLitLights());
     }
+
+    @Test
+    void testTurnOffGridAfterTurningOn(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        int currentCount = lightGrid.countLitLights();
+        lightGrid.turnOnGrid(c1,c2);
+        lightGrid.turnOffGrid(c1, c2);
+        Assertions.assertEquals(currentCount, lightGrid.countLitLights());
+    }
+    @Test
+    void testToggleGrid(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(6, lightGrid.countLitLights());
+    }
 }
