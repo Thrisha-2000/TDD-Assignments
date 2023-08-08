@@ -9,7 +9,8 @@ public class LightWithBrightnessImpl extends Light {
 
     @Override
     public void toggle() {
-
+        int currentBrightness = this.getBrightness();
+        this.setBrightness(currentBrightness + 2);
     }
 
     public void turnOn() {
