@@ -91,4 +91,14 @@ public class LightGridImplTest {
         lightGrid.turnOffGrid(c1, c2);
         Assertions.assertEquals(0, lightGrid.countLitLights());
     }
+
+    @Test
+    void toggleGrid(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(4,lightGrid.countLitLights());
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(0,lightGrid.countLitLights());
+    }
 }
