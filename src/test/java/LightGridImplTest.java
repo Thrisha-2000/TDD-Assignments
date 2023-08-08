@@ -101,4 +101,15 @@ public class LightGridImplTest {
         lightGrid.toggleGrid(c1,c2);
         Assertions.assertEquals(0,lightGrid.countLitLights());
     }
+
+    @Test
+    void toggleThrice(){
+        Coordinates c1 = new Coordinates(0,0);
+        Coordinates c2 = new Coordinates(1,1);
+        lightGrid.toggleGrid(c1,c2);
+        int countOfLightsLitFirstTime = lightGrid.countLitLights();
+        lightGrid.toggleGrid(c1,c2);
+        lightGrid.toggleGrid(c1,c2);
+        Assertions.assertEquals(countOfLightsLitFirstTime,lightGrid.countLitLights());
+    }
 }
